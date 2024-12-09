@@ -1,3 +1,9 @@
 .popup__form {
   margin-top: 27px;
 }
+
+.popup_type_update-avatar .popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
