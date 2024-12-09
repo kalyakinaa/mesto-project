@@ -18,12 +18,12 @@ const config = {
       .then(checkResponse);
   };
   // Получение данных пользователя
-  export const getUserProfile = () => {
+  export const getUserProfile = () => {//getUser
     return fetch(`${config.baseUrl}/users/me`, { headers: config.headers })
       .then(checkResponse);
   };
   // Обновление данных пользователя
-  export const updateUserProfile = (userData) => {
+  export const updateUserProfile = (userData) => {//updateUser
     return fetch(`${config.baseUrl}/users/me`, {
       method: 'PATCH',
       headers: config.headers,
